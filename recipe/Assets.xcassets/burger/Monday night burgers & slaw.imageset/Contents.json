@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Tesco-burgers-and-slaw.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

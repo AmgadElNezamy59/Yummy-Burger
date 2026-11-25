@@ -1,0 +1,333 @@
+import Foundation
+
+extension Recipe {
+    /// The full recipe collection, in display order.
+    static let all: [Recipe] = [
+        Recipe(
+            id: "double-cheeseburger",
+            title: "Double Cheeseburger & Secret Sauce",
+            summary: "Two crispy smashed patties, melted cheese and a tangy secret sauce.",
+            category: .meat,
+            minutes: 30,
+            servings: 2,
+            ingredients: [
+                IngredientGroup(items: [
+                    "1 small onion, finely chopped",
+                    "4 sesame-topped burger buns",
+                    "300g steak mince",
+                    "1 tbsp sunflower oil",
+                    "Small wedge of iceberg lettuce, finely shredded",
+                    "2 slices of mild cheddar or burger cheese",
+                    "1 gherkin, sliced lengthways",
+                    "Oven fries, to serve",
+                ]),
+                IngredientGroup(title: "Secret sauce", items: [
+                    "100g mayonnaise",
+                    "1 tbsp American mustard",
+                    "Large pinch of garlic granules",
+                    "Large pinch of onion granules",
+                    "¼ tsp smoked paprika",
+                    "1 tbsp white wine vinegar",
+                    "1 tsp pickle relish or finely chopped gherkin",
+                ]),
+            ],
+            steps: [
+                "Tip the onion into a small bowl and pour over boiling water from the kettle until just covered. Leave to cool.",
+                "Put all the secret sauce ingredients in another small bowl, then add 1 tbsp of the cooled onion water and mix until evenly combined. Set aside.",
+                "Halve two of the burger buns, then cut a thick slice from the middles of the other two. Toast or grill the middle slices on both sides and the other buns only on the cut sides, then set aside.",
+                "Heat the oven to 100C/80C fan/gas ¼. Divide the mince into four loose piles and season. Heat ¼ tbsp of the oil in a heavy frying pan or skillet over a high heat and put one pile of beef in the pan.",
+                "Working quickly, cover with a square of baking parchment and carefully use a second pan to press the patty down – watch out for the heat and rising steam. Hold for about 10 seconds, then remove the weight and paper and cook for 2 mins more.",
+                "Turn the patty, press down with a spatula and cook for another minute. Keep warm in the oven while you cook the other patties the same way.",
+                "Spread sauce over the bun bases, scatter with onion, then add lettuce, a cheese slice, a patty, a few gherkin slices and a middle slice of toasted bun. Add more sauce, onion, lettuce, another patty and the bun tops. Serve with oven fries and extra sauce.",
+            ]
+        ),
+        Recipe(
+            id: "next-level-beef",
+            title: "Next-Level Beef Burgers",
+            summary: "Soft homemade buns, freshly minced chuck steak and a punchy burger sauce.",
+            category: .meat,
+            minutes: 195,
+            servings: 4,
+            ingredients: [
+                IngredientGroup(title: "Buns", items: [
+                    "250g plain white flour, plus extra for dusting",
+                    "20g golden caster sugar",
+                    "5g fast-action dried yeast",
+                    "150ml milk",
+                    "1 egg, beaten",
+                    "50g butter, softened",
+                    "Sesame seeds, for sprinkling (optional)",
+                ]),
+                IngredientGroup(title: "Burgers", items: [
+                    "600g dry-aged chuck steak, cut into large chunks",
+                    "Toppings of your choice, such as cheese, onions, tomatoes or lettuce",
+                ]),
+                IngredientGroup(title: "Burger sauce", items: [
+                    "3 tbsp mayonnaise",
+                    "2 tbsp ketchup or sriracha (or 1 tbsp of each)",
+                    "1 tbsp American mustard",
+                    "1 small gherkin, finely chopped, plus extra to serve",
+                    "Large pinch of garlic granules",
+                ]),
+            ],
+            steps: [
+                "Tip the flour, sugar, yeast and 1 tsp salt into a stand mixer fitted with a paddle. On medium speed, gradually add the milk, then half the egg. Mix for a few minutes, then add the butter a little at a time until the dough is elastic and shiny – about 5 mins. (An electric whisk and bowl work too.)",
+                "Divide the dough into four and roll each piece into a round on a lightly floured surface. Space well apart on a lined baking tray, press down gently and leave somewhere warm for 2 hrs (or in the fridge overnight) until doubled in size.",
+                "Heat the oven to 200C/180C fan/gas 6. Brush the buns with the remaining egg, scatter with sesame seeds, if using, and bake for 13-15 mins until risen and golden. Leave to cool. The buns can be made a day ahead.",
+                "For the sauce, stir together all the burger sauce ingredients and set aside. It keeps chilled for a day.",
+                "Chill the steak in the freezer with the food processor blade (and bowl, if it fits) for 30 mins, until the meat is firm but not frozen.",
+                "Working quickly, pulse half the beef 8-10 times until minced – don't overwork it. Tip onto a tray, repeat with the rest, then mix both batches with ½ tsp salt.",
+                "Divide into four and gently form loose patties a little wider than the buns. Cook them as soon as possible after shaping.",
+                "Heat a large, heavy frying pan over a medium heat. Toast the split buns cut-side down, then set aside. Sear the burgers, pressing down with a spatula, for 4-5 mins each side for medium-rare or 6-7 mins for medium. Add cheese after flipping, if you like.",
+                "Assemble with the buns, your favourite toppings and plenty of burger sauce.",
+            ]
+        ),
+        Recipe(
+            id: "lemon-herb-chicken",
+            title: "Lemon & Herb Chicken Burgers",
+            summary: "Zesty marinated chicken with crispy bacon, avocado and a lemony mayo.",
+            category: .meat,
+            minutes: 45,
+            servings: 4,
+            ingredients: [
+                IngredientGroup(items: [
+                    "4 skinless, boneless chicken breasts",
+                    "8 rashers smoked bacon",
+                    "4 burger buns, split",
+                    "4 slices of your favourite cheese (optional)",
+                    "2 avocados, halved, stoned, peeled and sliced",
+                    "2 tomatoes, sliced",
+                    "4 handfuls of lettuce leaves",
+                ]),
+                IngredientGroup(title: "Marinade", items: [
+                    "1 garlic clove",
+                    "2 tsp chopped thyme leaves, or 1 tsp dried thyme",
+                    "½ lemon, juiced",
+                    "3 tbsp olive oil",
+                ]),
+                IngredientGroup(title: "Sauce", items: [
+                    "3 tbsp mayonnaise",
+                    "1 tbsp lemon juice",
+                    "1 tsp mustard",
+                    "Small splash of chilli sauce (optional)",
+                ]),
+            ],
+            steps: [
+                "Make the marinade: crush the garlic with the thyme and a pinch of salt using a pestle and mortar. Add the lemon juice, olive oil and plenty of cracked black pepper and mash together.",
+                "Flatten the chicken breasts slightly with a rolling pin until they're an even thickness. Put them in a container with the marinade, seal, shake and chill for up to 1 hr.",
+                "Light the barbecue and wait until the coals are ashen, or heat a gas barbecue to medium. Mix the sauce ingredients in a small bowl and keep chilled.",
+                "Cook the bacon on the barbecue for 3-4 mins until crisp, then set aside. Toast the cut sides of the buns where the bacon was cooked to soak up the flavour.",
+                "Barbecue the chicken for 4-5 mins each side until lightly charred. Top each breast with cheese, if using, and cook for a few minutes more until melted and the chicken is cooked through (a probe thermometer should read at least 74C).",
+                "Spread the bun bases with sauce, then layer up the avocado, tomato, chicken, bacon and lettuce. Add the bun tops, press down lightly and serve.",
+            ]
+        ),
+        Recipe(
+            id: "moroccan-lamb",
+            title: "Moroccan Lamb Burgers",
+            summary: "Juicy lamb with warm spices and sweet apricots, ready in under half an hour.",
+            category: .meat,
+            minutes: 25,
+            servings: 6,
+            ingredients: [
+                IngredientGroup(items: [
+                    "1 onion, roughly chopped",
+                    "2½cm piece of ginger, roughly chopped",
+                    "2 garlic cloves, roughly chopped",
+                    "Handful of fresh coriander",
+                    "2 tsp ground coriander",
+                    "2 tsp ground cumin",
+                    "1 tsp ground cinnamon",
+                    "75g ready-to-eat dried apricots, roughly chopped",
+                    "500g lean lamb mince",
+                ]),
+                IngredientGroup(title: "To serve", items: [
+                    "6 wholemeal buns",
+                    "Lettuce, sliced tomato and red onion",
+                    "Mayonnaise",
+                ]),
+            ],
+            steps: [
+                "Blend the onion, ginger, garlic and fresh coriander in a food processor until finely chopped.",
+                "Add the spices, apricots, lamb and some seasoning. Blend until slightly chunky, then shape into six burgers.",
+                "Cook under a medium-hot grill for 4-5 mins each side until cooked through.",
+                "Serve in wholemeal buns with lettuce, tomato, sliced red onion and mayo.",
+            ]
+        ),
+        Recipe(
+            id: "bbq-aubergine-black-bean",
+            title: "BBQ Aubergine & Black Bean Burgers",
+            summary: "Smoky 'pulled' aubergine and black beans in a sticky barbecue sauce.",
+            category: .veggie,
+            minutes: 60,
+            servings: 4,
+            ingredients: [
+                IngredientGroup(items: [
+                    "2 large aubergines, pricked all over with a fork",
+                    "1 tbsp olive oil",
+                    "1 large onion, thinly sliced",
+                    "1 heaped tsp garlic granules",
+                    "2 tsp smoked paprika",
+                    "1 tbsp demerara sugar",
+                    "1 tsp dried oregano",
+                    "5 tbsp barbecue sauce",
+                    "400g can black beans, drained",
+                ]),
+                IngredientGroup(title: "To serve", items: [
+                    "4 burger buns, toasted and lightly buttered",
+                    "Red onion or pink pickled onion",
+                    "Shredded lettuce, coleslaw and corn on the cob (optional)",
+                ]),
+            ],
+            steps: [
+                "Heat the grill to high and grill the aubergines, turning occasionally, until blackened and soft all over – about 20-30 mins. Set aside to cool.",
+                "Meanwhile, heat the oil in a large ovenproof pan over a medium heat. Add the onion and fry until softened and golden, about 10 mins. Heat the oven to 200C/180C fan/gas 6.",
+                "Peel off and discard the aubergine skin (or scoop out the flesh with a spoon) and add the flesh to the pan with the onion.",
+                "Add the garlic granules, paprika, sugar, oregano, 1 tsp sea salt and 1 tsp black pepper. Stir until aromatic, then mix in the barbecue sauce and black beans.",
+                "Season and bake for 10-15 mins until the sauce is rich and thick and the aubergine resembles pulled pork.",
+                "Pile into the buns with the onion and any other fillings you like. Serve with coleslaw and corn on the cob, if you like.",
+            ]
+        ),
+        Recipe(
+            id: "black-bean",
+            title: "Black Bean Burgers",
+            summary: "Sweet potato and black bean patties with avocado and a zesty carrot salad.",
+            category: .veggie,
+            minutes: 50,
+            servings: 4,
+            ingredients: [
+                IngredientGroup(title: "Burgers", items: [
+                    "75g wholemeal bread or sourdough",
+                    "75g walnuts",
+                    "400g sweet potato",
+                    "400g can black beans, drained",
+                    "1 tsp smoked paprika",
+                    "1 tsp ground cumin",
+                    "½ tsp onion granules",
+                    "1 tbsp tomato purée",
+                    "2 tbsp rapeseed oil, to fry",
+                ]),
+                IngredientGroup(title: "Salad", items: [
+                    "½ cucumber, halved, deseeded and sliced on an angle",
+                    "2 large carrots (about 300g), peeled into ribbons",
+                    "Small bunch of coriander, finely chopped",
+                    "2 tbsp lime juice",
+                    "1 tbsp rapeseed oil",
+                ]),
+                IngredientGroup(title: "To serve", items: [
+                    "4 sourdough burger buns",
+                    "2 large tomatoes, thickly sliced",
+                    "1 avocado, peeled, stoned and sliced",
+                    "50g rocket",
+                    "Coconut yogurt or burger sauce of your choice",
+                ]),
+            ],
+            steps: [
+                "Pulse the bread and walnuts in a food processor to make fine crumbs.",
+                "Prick the sweet potatoes with a fork and microwave for 5-10 mins until soft. Cut in half and scrape the flesh into the food processor.",
+                "Add the well-drained beans, paprika, cumin, onion granules and tomato purée. Season generously and pulse until mostly smooth and holding together.",
+                "Shape into 4 patties and chill for 20 mins to firm up.",
+                "Meanwhile, make the salad: mix the cucumber, carrot, coriander, lime juice and oil. Season and set aside.",
+                "Heat the oil in a large non-stick frying pan over a medium heat. Fry the patties for 4-5 mins each side until golden and hot through.",
+                "Put a small handful of rocket in each bun, then top with tomato, a burger, avocado and a dollop of coconut yogurt or sauce. Serve with the salad on the side.",
+            ]
+        ),
+        Recipe(
+            id: "curried-cauliflower",
+            title: "Curried Cauliflower Burgers",
+            summary: "Curry-roasted cauliflower steaks with cool curried mayo and a fresh tomato salsa.",
+            category: .veggie,
+            minutes: 40,
+            servings: 4,
+            ingredients: [
+                IngredientGroup(items: [
+                    "1 small cauliflower",
+                    "3 tbsp olive oil",
+                    "2 tbsp medium curry powder",
+                    "2 large tomatoes, finely chopped",
+                    "1 red onion, finely chopped",
+                    "½ bunch of coriander, finely chopped",
+                    "4 burger buns",
+                    "2 handfuls of Bombay mix (optional)",
+                ]),
+                IngredientGroup(title: "Curried mayo", items: [
+                    "2 tbsp mayonnaise",
+                    "3 tbsp Greek yogurt",
+                    "2 tbsp curry paste",
+                ]),
+            ],
+            steps: [
+                "Heat the oven to 200C/180C fan/gas 6. Pull the leaves off the cauliflower and cut off the base, then slice into 2cm-thick steaks.",
+                "Mix the oil with the curry powder. Lay the steaks on a foil-lined baking tray, brush both sides generously with the curry oil and sprinkle with salt. Roast for 25-30 mins until tender.",
+                "Mix the tomatoes, onion, coriander and a pinch of salt in a bowl. In a second bowl, mix the curried mayo ingredients.",
+                "Toast the buns cut-side down in a dry frying pan. Top each with curried mayo, a cauliflower steak, more mayo, the tomato salsa and some Bombay mix, if you like.",
+            ]
+        ),
+        Recipe(
+            id: "beetroot-quinoa",
+            title: "Beetroot & Quinoa Burgers",
+            summary: "Vibrant beetroot and quinoa patties on peppery rocket with a tangy dressing.",
+            category: .veggie,
+            minutes: 45,
+            servings: 4,
+            ingredients: [
+                IngredientGroup(title: "Burgers", items: [
+                    "2 tbsp rapeseed oil",
+                    "1 red onion, finely chopped",
+                    "1 tbsp cumin seeds",
+                    "2 garlic cloves, finely chopped",
+                    "200g cooked quinoa",
+                    "2 large cooked beetroot (150g), finely grated, liquid reserved",
+                    "50g plain flour",
+                    "2 tbsp milled flaxseed",
+                    "½ small bunch of coriander, plus a few leaves to serve",
+                ]),
+                IngredientGroup(title: "Dressing", items: [
+                    "25ml beetroot liquid",
+                    "½ lemon, juiced",
+                    "100g low-fat soy yogurt",
+                    "50ml extra virgin olive oil",
+                ]),
+                IngredientGroup(title: "To serve", items: [
+                    "200g rocket",
+                ]),
+            ],
+            steps: [
+                "Heat the oven to 220C/200C fan/gas 7. Heat 1 tbsp of the oil in a small frying pan and fry the onion, cumin and garlic over a medium heat for 8 mins until softened and golden. Tip into a bowl.",
+                "Add the quinoa, beetroot, flour, flaxseed and coriander and mix well. Season lightly and leave for 5 mins to bind.",
+                "Divide into four – the mixture will be quite loose – and shape into patties with wet hands. Bake on a lined tray for 15 mins, then turn and cook for 10 mins more.",
+                "Meanwhile, whisk together the dressing ingredients and season.",
+                "Pile the rocket onto plates and top each with a burger. Drizzle with the dressing and scatter with coriander.",
+            ]
+        ),
+        Recipe(
+            id: "monday-night",
+            title: "Monday Night Burgers & Slaw",
+            summary: "A speedy plant-based burger with a crunchy lemon and mustard slaw.",
+            category: .veggie,
+            minutes: 20,
+            servings: 2,
+            ingredients: [
+                IngredientGroup(items: [
+                    "2 plant-based burgers",
+                    "2 burger buns, split",
+                    "1 large vine tomato, sliced",
+                    "Small handful of rocket or spinach",
+                ]),
+                IngredientGroup(title: "Slaw", items: [
+                    "¼ cabbage (white, red, sweetheart or spring greens), finely sliced",
+                    "1 carrot, grated",
+                    "½ red onion, finely sliced",
+                    "4 tbsp vegan mayonnaise, plus extra to serve",
+                    "Squeeze of lemon juice",
+                    "1 tsp Dijon mustard",
+                    "Small handful of chives, parsley or coriander, finely chopped",
+                ]),
+            ],
+            steps: [
+                "Heat the grill to medium-high. Grill the burgers on a baking tray for 4-5 mins each side until golden and crisp, adding the buns cut-side up for the last 2-3 mins.",
+                "Meanwhile, toss the slaw ingredients together with some seasoning. Taste and add a little more lemon or mustard, if you like.",
+                "Spread a little mayo on the bun bases, then add a tomato slice, a burger, a spoonful of slaw and some rocket or spinach. Add the lids and serve with the remaining slaw.",
+            ]
+        ),
+    ]
+}
